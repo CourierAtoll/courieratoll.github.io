@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Courier Atoll | Homepage</title>
+	
+	<meta name="description" content="A small webdev testing ground. Free of copy.">
+	<meta name="keywords" content="courier, atoll, webdev">
+	<meta name="author" content="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta charset="utf-8"/>
+	
+</head>
+<body onload="adjustPageForSlideshowType1()" onresize="adjustPageForSlideshowType1()">
+	<div class="announcementBar" id="announcementBar">
+		<p>30-Day Money Back Guarantee</p>
+	</div>
+	
+	<div class="stickyHeaderBar" id="stickyHeaderBar">
+		<div class="headerBranding">
+			<img src="graphics/headerLogoLight.png">
+		</div>
+		
+		<div class="headerTools">
+			<div class="headerNavigation">
+				<ul class="headerNavigationList" id="headerNavigationList">
+					<li class="headerNavigationItem"><a id="headerNavigationItem1" onmouseenter="headerNavigationItemHover(this.id)" onmouseleave="headerNavigationItemNoHover(this.id)" href="index.html">Home</a></li>
+					<li class="headerNavigationItem"><a id="headerNavigationItem2" onmouseenter="headerNavigationItemHover(this.id)" onmouseleave="headerNavigationItemNoHover(this.id)" href="shop.html">Shop</a></li>
+					<li class="headerNavigationItem"><a id="headerNavigationItem3" onmouseenter="headerNavigationItemHover(this.id)" onmouseleave="headerNavigationItemNoHover(this.id)" href="faq.html">FAQ</a><li>
+					<!--<li class="headerNavigationItem"><a class="headerNavigationItemWithDropdown" href="contact.html" style="border-bottom: none;">Support</a>
+						<ul class="headerNavigationDropdownList">
+							<li class="headerNavigationDropdownItem"><a href="faq.html">FAQs</a></li>
+							<li class="headerNavigationDropdownItem"><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</li>-->
+					<li class="headerNavigationItem"><a id="headerNavigationItem4" onmouseenter="headerNavigationItemHover(this.id)" onmouseleave="headerNavigationItemNoHover(this.id)" href="basket.html">Basket (1)</a><li>
+				</ul>
+			</div>
+		
+			<div class="headerActions">
+			</div>
+		</div>
+	</div>
+		
+	<div class="slideshowType1" id="slideshowType1">
+		<div class="slideshowType1ButtonsContainer">
+			<div class="slideshowType1ButtonLeftContainer">
+				<button type="button" class="slideshowType1ButtonLeft" onclick="slideshowType1Controls(1)">Go Left</button> 
+			</div>
+			<div class="slideshowType1ButtonRightContainer">
+				<button type="button" class="slideshowType1ButtonRight" onclick="slideshowType1Controls(-1)">Go Right</button>
+			</div>
+		</div>
+		<div class="slideshowType1Wrapper" id="slideshowType1Wrapper">
+			<div class="slideshowType1Slide" id="slideshowType1Item1">
+				<div class="slideshowType1Slide1">
+					<div class="slideshowType1SlideContentLeft">
+						<h2>Slide Title</h2>
+						<p>Slide Paragraph</p>
+						<p>Slide Link</p>
+					</div>
+				</div>
+			</div>
+			<div class="slideshowType1Slide" id="slideshowType1Item2">
+				<div class="slideshowType1Slide2">
+					<div class="slideshowType1SlideContentRight">
+						<h2>Slide Title</h2>
+						<p>Slide Paragraph</p>
+						<p>Slide Link</p>
+					</div>
+				</div>
+			</div>
+			<div class="slideshowType1Slide" id="slideshowType1Item3">
+				<div class="slideshowType1Slide3">
+					<div class="slideshowType1SlideContentLeft">
+						<h2>Slide Title</h2>
+						<p>Slide Paragraph</p>
+						<p>Slide Link</p>
+					</div>
+				</div>
+			</div>
+			<div class="slideshowType1Slide" id="slideshowType1Item4">
+				<div class="slideshowType1Slide4">
+					<div class="slideshowType1SlideContentRight">
+						<h2>Slide Title</h2>
+						<p>Slide Paragraph</p>
+						<p>Slide Link</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+		
+		
+		
+	<!--	
+	<div class="slideshowType1" id="slideshowType1">
+		<div class="slideshowType1Item1" id="slideshowType1Item1">
+			<p>Slideshow Content</p>
+		</div>
+		<div class="slideshowType1Item2" id="slideshowType1Item2">
+			<p>Slideshow Content</p>
+		</div>
+		<div class="slideshowType1Item3" id="slideshowType1Item3">
+			<p>Slideshow Content</p>
+		</div>
+		<div class="slideshowType1Item4" id="slideshowType1Item4">
+			<p>Slideshow Content</p>
+		</div>
+	</div>
+	-->
+
+	<button type="button" onclick="slideshowType1Controls(1)">Go Left</button> 
+	<button type="button" onclick="slideshowType1Controls(-1)">Go Right</button> 
+	
+	<div class="contentType1">
+		<div class="contentType1Title">
+			<h1>Copy Title</h1>
+			<p>Copy subtitle</p>
+		</div>
+		<div class="contentType1Box"><p>Left Content Box</p></div>
+		<div class="contentType1Box"><p>Right Content Box</p></div>
+	</div>
+
+	<div class="contentType2">
+		<div class="contentType2Box">
+			<img src="graphics/slideshow2_1.png">
+		</div>
+		<div class="contentType2Box">
+			<div class="contentType2Copy">
+				<p>Some copy.</p>
+			</div>
+		</div>
+		<!--<div class="slideshowType2Item1">
+			<p>Slideshow Content</p>
+			<p>Slideshow Content</p>
+			<p>Slideshow Content</p>
+		</div>-->
+	</div>
+	
+	<div class="contentType3">
+		<img src="graphics/infographic.png">
+	</div>
+	
+	<div class="slideshowType2">
+		
+	</div>
+	
+</body>
+<script>
+var slideshowType1SlidePos = 0;
+var slideshowType1MaxSlides = -3; 
+//Remember that an index starts at 0, so a value of -3 means there are 4 slides.
+//The value of slideshowType1MaxSlides has to be negative because fuck you, that's why.
+
+function slideshowType1Controls(userInput) {
+
+	//Calculate new slide position.
+	slideshowType1SlidePos = slideshowType1SlidePos + userInput
+	
+	//Tests to see if the slideshow position is within the appropriate range.
+	if (slideshowType1SlidePos > 0) {
+		slideshowType1SlidePos = slideshowType1MaxSlides
+	}
+	
+	if (slideshowType1SlidePos < slideshowType1MaxSlides) {
+		slideshowType1SlidePos = 0
+	}
+	
+	//Calculate the margin left value from slide position.
+	var marginLeftVal;
+	marginLeftVal = slideshowType1SlidePos * 100;
+	marginLeftVal = marginLeftVal.toString();
+	marginLeftVal += 'vw';
+
+	document.getElementById('slideshowType1Wrapper').style.marginLeft = marginLeftVal;
+	
+	adjustPageForSlideshowType1()
+	
+	//I want to change the colours of the header elements depending on which slide is on display.
+	var numOfHeaderLinks = document.querySelectorAll('.headerNavigationItem > a');
+	console.log(numOfHeaderLinks);
+	if (slideshowType1SlidePos == 0 || slideshowType1SlidePos == -2) {
+		console.log('make the header text black');
+		for (let i = 0; i < numOfHeaderLinks.length; i++) {
+			numOfHeaderLinks[i].style.color = 'black';
+		}
+	}
+	
+	if (slideshowType1SlidePos == -1 || slideshowType1SlidePos == -3) {
+		console.log('make the header text white');
+		//document.querySelectorAll('.headerNavigationItem > a').style.color = '#000000';
+		for (let i = 0; i < numOfHeaderLinks.length; i++) {
+			numOfHeaderLinks[i].style.color = 'white';
+		}
+	}
+	
+}
+
+function headerNavigationItemHover(itemVal) {
+	console.log(itemVal)
+	if (slideshowType1SlidePos == 0 || slideshowType1SlidePos == -2) {
+		console.log('make the header text black');
+		document.getElementById(itemVal).style.borderBottomColor = "black";
+	}
+	
+	if (slideshowType1SlidePos == -1 || slideshowType1SlidePos == -3) {
+		console.log('make the header text black');
+		document.getElementById(itemVal).style.borderBottomColor = "white";
+	}
+}
+
+function headerNavigationItemNoHover(itemVal) {
+	console.log(itemVal)
+	if (slideshowType1SlidePos == 0 || slideshowType1SlidePos == -2) {
+		console.log('make the header text black');
+		document.getElementById(itemVal).style.borderBottomColor = "white";
+	}
+	
+	if (slideshowType1SlidePos == -1 || slideshowType1SlidePos == -3) {
+		console.log('make the header text black');
+		document.getElementById(itemVal).style.borderBottomColor = "black";
+	}
+}
+
+function adjustPageForSlideshowType1() {
+	//This calculates the height of the slideshow.
+	var announcementBarHeight = document.getElementById('announcementBar').clientHeight;
+	var slideshowType1Height = window.innerHeight - announcementBarHeight + 2; //I add two as a fix for a single white line that won't fucking disappear.
+	
+	//Now we calculate the height of the top margin.
+	var stickyHeaderBarHeight = document.getElementById('stickyHeaderBar').clientHeight;
+	var slideshowType1MarginTop = stickyHeaderBarHeight + 2; //Again, I needed to get rid of a line so I added two.
+	
+	//Now we apply these values to something usable.
+	slideshowType1Height = slideshowType1Height.toString();
+	slideshowType1Height += 'px';
+	
+	slideshowType1MarginTop = slideshowType1MarginTop.toString();
+	slideshowType1MarginTop = '-' + slideshowType1MarginTop + 'px';
+	
+	//Console log for testing.
+	console.log(slideshowType1MarginTop);
+	
+	//And finally we apply these values to the relevant elements.
+	document.getElementById('slideshowType1').style.height = slideshowType1Height;
+	document.getElementById('slideshowType1').style.marginTop = slideshowType1MarginTop;
+}
+</script>
+</html>
