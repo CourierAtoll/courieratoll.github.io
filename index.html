@@ -11,7 +11,7 @@
 	<meta charset="utf-8"/>
 	
 </head>
-<body onload="adjustPageForSlideshowType1()" onresize="adjustPageForSlideshowType1()">
+<body onload="adjustPageForSlideshowType1()"> <!--onresize="adjustPageForSlideshowType1()"-->
 	<div class="announcementBar" id="announcementBar">
 		<p>30-Day Money Back Guarantee</p>
 	</div>
@@ -56,7 +56,7 @@
 		</div>
 		
 		<div class="slideshowType1Wrapper" id="slideshowType1Wrapper">
-			<div class="slideshowType1Slide" id="slideshowType1Item1">
+			<div class="slideshowType1Slide" id="slideshowType1Slide1">
 				<div class="slideshowType1Slide1">
 					<div class="slideshowType1SlideContentLeft">
 						<h2>Slide Title</h2>
@@ -65,7 +65,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="slideshowType1Slide" id="slideshowType1Item2">
+			<div class="slideshowType1Slide" id="slideshowType1Slide2">
 				<div class="slideshowType1Slide2">
 					<div class="slideshowType1SlideContentRight">
 						<h2>Slide Title</h2>
@@ -74,7 +74,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="slideshowType1Slide" id="slideshowType1Item3">
+			<div class="slideshowType1Slide" id="slideshowType1Slide3">
 				<div class="slideshowType1Slide3">
 					<div class="slideshowType1SlideContentLeft">
 						<h2>Slide Title</h2>
@@ -83,7 +83,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="slideshowType1Slide" id="slideshowType1Item4">
+			<div class="slideshowType1Slide" id="slideshowType1Slide4">
 				<div class="slideshowType1Slide4">
 					<div class="slideshowType1SlideContentRight">
 						<h2>Slide Title</h2>
@@ -154,6 +154,7 @@
 <script>
 var slideshowType1SlidePos = 0;
 var slideshowType1MaxSlides = -3; 
+var slideshowType1Height = 2;
 //Remember that an index starts at 0, so a value of -3 means there are 4 slides.
 //The value of slideshowType1MaxSlides has to be negative because fuck you, that's why.
 
@@ -181,8 +182,6 @@ function slideshowType1Controls(userInput) {
 
 	document.getElementById('slideshowType1Wrapper').style.marginLeft = marginLeftVal;
 	
-	adjustPageForSlideshowType1()
-	
 	//I want to change the colours of the header elements depending on which slide is on display.
 	//I also want to change the colours of the control arrows.
 	var numOfHeaderLinks = document.querySelectorAll('.headerNavigationItem > a');
@@ -207,6 +206,8 @@ function slideshowType1Controls(userInput) {
 		document.getElementById("slideshowType1RightArrow").src="graphics/arrowRightWhite.png";
 		document.getElementById("headerLogo").src="graphics/headerLogoWhite.png";
 	}
+	
+	adjustPageForSlideshowType1()
 	
 }
 
@@ -239,7 +240,7 @@ function headerNavigationItemNoHover(itemVal) {
 function adjustPageForSlideshowType1() {
 	//This calculates the height of the slideshow.
 	var announcementBarHeight = document.getElementById('announcementBar').clientHeight;
-	var slideshowType1Height = window.innerHeight - announcementBarHeight + 2; //I add two as a fix for a single white line that won't fucking disappear.
+	slideshowType1Height = window.innerHeight - announcementBarHeight + 2; //I add two as a fix for a single white line that won't fucking disappear.
 	
 	//Now we calculate the height of the top margin.
 	var stickyHeaderBarHeight = document.getElementById('stickyHeaderBar').clientHeight;
@@ -258,6 +259,7 @@ function adjustPageForSlideshowType1() {
 	//And finally we apply these values to the relevant elements.
 	document.getElementById('slideshowType1').style.height = slideshowType1Height;
 	document.getElementById('slideshowType1').style.marginTop = slideshowType1MarginTop;
+	
 }
 </script>
 </html>

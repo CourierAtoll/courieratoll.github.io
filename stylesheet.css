@@ -252,6 +252,7 @@ body {
 .slideshowType1Slide1 {
 	height: 100%;
 	width: 100%;
+	box-shadow: inset 0 0 0 1000px rgba(255,192,150,.2);
 	background-image: url("graphics/slideshow1_1.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -270,6 +271,7 @@ body {
 .slideshowType1Slide3 {
 	height: 100%;
 	width: 100%;
+	box-shadow: inset 0 0 0 1000px rgba(145,100,63,.2);
 	background-image: url("graphics/slideshow1_3.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
