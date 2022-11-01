@@ -18,7 +18,7 @@
 	
 	<div class="stickyHeaderBar" id="stickyHeaderBar">
 		<div class="headerBranding">
-			<img src="graphics/headerLogoLight.png">
+			<img id="headerLogo" src="graphics/headerLogoBlack.png">
 		</div>
 		
 		<div class="headerTools">
@@ -43,14 +43,18 @@
 	</div>
 		
 	<div class="slideshowType1" id="slideshowType1">
+	
 		<div class="slideshowType1ButtonsContainer">
 			<div class="slideshowType1ButtonLeftContainer">
-				<button type="button" class="slideshowType1ButtonLeft" onclick="slideshowType1Controls(1)">Go Left</button> 
+				<img onclick="slideshowType1Controls(1)" id="slideshowType1LeftArrow" src="graphics/arrowLeftBlack.png">
+				<!--<button type="button" class="slideshowType1ButtonLeft" onclick="slideshowType1Controls(1)">Go Left</button>-->
 			</div>
 			<div class="slideshowType1ButtonRightContainer">
-				<button type="button" class="slideshowType1ButtonRight" onclick="slideshowType1Controls(-1)">Go Right</button>
+				<img onclick="slideshowType1Controls(-1)" id="slideshowType1RightArrow" src="graphics/arrowRightBlack.png">
+				<!--<button type="button" class="slideshowType1ButtonRight" onclick="slideshowType1Controls(-1)">Go Right</button>-->
 			</div>
 		</div>
+		
 		<div class="slideshowType1Wrapper" id="slideshowType1Wrapper">
 			<div class="slideshowType1Slide" id="slideshowType1Item1">
 				<div class="slideshowType1Slide1">
@@ -154,6 +158,8 @@ var slideshowType1MaxSlides = -3;
 //The value of slideshowType1MaxSlides has to be negative because fuck you, that's why.
 
 function slideshowType1Controls(userInput) {
+	//For some reason the page main slideshow keeps glitching out every so often so I'm calling the function which adjusts it whenever I can.
+	adjustPageForSlideshowType1()
 
 	//Calculate new slide position.
 	slideshowType1SlidePos = slideshowType1SlidePos + userInput
@@ -178,6 +184,7 @@ function slideshowType1Controls(userInput) {
 	adjustPageForSlideshowType1()
 	
 	//I want to change the colours of the header elements depending on which slide is on display.
+	//I also want to change the colours of the control arrows.
 	var numOfHeaderLinks = document.querySelectorAll('.headerNavigationItem > a');
 	console.log(numOfHeaderLinks);
 	if (slideshowType1SlidePos == 0 || slideshowType1SlidePos == -2) {
@@ -185,6 +192,9 @@ function slideshowType1Controls(userInput) {
 		for (let i = 0; i < numOfHeaderLinks.length; i++) {
 			numOfHeaderLinks[i].style.color = 'black';
 		}
+		document.getElementById("slideshowType1LeftArrow").src="graphics/arrowLeftBlack.png";
+		document.getElementById("slideshowType1RightArrow").src="graphics/arrowRightBlack.png";
+		document.getElementById("headerLogo").src="graphics/headerLogoBlack.png";
 	}
 	
 	if (slideshowType1SlidePos == -1 || slideshowType1SlidePos == -3) {
@@ -193,6 +203,9 @@ function slideshowType1Controls(userInput) {
 		for (let i = 0; i < numOfHeaderLinks.length; i++) {
 			numOfHeaderLinks[i].style.color = 'white';
 		}
+		document.getElementById("slideshowType1LeftArrow").src="graphics/arrowLeftWhite.png";
+		document.getElementById("slideshowType1RightArrow").src="graphics/arrowRightWhite.png";
+		document.getElementById("headerLogo").src="graphics/headerLogoWhite.png";
 	}
 	
 }
