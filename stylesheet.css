@@ -236,7 +236,7 @@ body {
 .slideshowType1Slide1 {
 	height: 100%;
 	width: 100%;
-	background-image: url("graphics/slideshow1_1.jpg");
+	background-image: url("graphics/slideshow1_1.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -245,7 +245,7 @@ body {
 .slideshowType1Slide2 {
 	height: 100%;
 	width: 100%;
-	background-image: url("graphics/slideshow1_2.jpg");
+	background-image: url("graphics/slideshow1_2.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -254,7 +254,7 @@ body {
 .slideshowType1Slide3 {
 	height: 100%;
 	width: 100%;
-	background-image: url("graphics/slideshow1_3.jpg");
+	background-image: url("graphics/slideshow1_3.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -263,7 +263,7 @@ body {
 .slideshowType1Slide4 {
 	height: 100%;
 	width: 100%;
-	background-image: url("graphics/slideshow1_4.jpg");
+	background-image: url("graphics/slideshow1_4.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
