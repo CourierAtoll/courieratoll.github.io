@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Courier Atoll | Shop</title>
+	<title>Courier Atoll | FAQ</title>
 	
 	<meta name="description" content="A small webdev testing ground. Free of copy.">
 	<meta name="keywords" content="courier, atoll, webdev">
@@ -11,7 +11,7 @@
 	<meta charset="utf-8"/>
 	
 </head>
-<body>
+<body onload="adjustPageForSlideshowType1()" onresize="adjustPageForSlideshowType1()">
 	<div class="announcementBar" id="announcementBar">
 		<p>30-Day Money Back Guarantee</p>
 	</div>
@@ -43,43 +43,6 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="shopType1">	
-		<div class="shopType1Title">
-
-			<h1>Choose Your Product</h1>
-		</div>
-		<div class="shopType1List">
-			<a class="shopType1Item" href="product1.html">
-				<img src="graphics/product1_1.png">
-				<div class="shopType1ItemText">
-					<h2>Cherchez La Femme</h2>
-					<h3>£420.00</h3>
-				</div>
-			</a>
-			<a class="shopType1Item" href="product2.html">
-				<img src="graphics/product2_1.png">
-				<div class="shopType1ItemText">
-					<h2>Confirmed Bachelor</h2>
-					<h3>£420.00</h3>
-				</div>
-			</a>
-			<a class="shopType1Item" href="product3.html">
-				<img src="graphics/product3_1.png">
-				<div class="shopType1ItemText">
-					<h2>Black Widow</h2>
-					<h3>£420.00</h3>
-				</div>
-			</a>
-			<a class="shopType1Item" href="product4.html">
-				<img src="graphics/product4_1.png">
-				<div class="shopType1ItemText">
-					<h2>Wild Wasteland</h2>
-					<h3>£420.00</h3>
-				</div>
-			</a>
-		</div>
-	</div>
 	
 	<div class="staticFooter">
 		<div class="staticFooterContent">
@@ -88,19 +51,4 @@
 	</div>
 	
 </body>
-<script>
-alternativeStickyHeader()
-
-function alternativeStickyHeader() {
-	//It was easier for me to make a function that changes what the header looks like than to just made new styles in the stylesheet.
-	//If you don't like this method then go fuck yourself.
-	document.getElementById('stickyHeaderBar').style.backgroundColor = "rgba(255,255,255,0.9)";
-	var numOfHeaderLinks = document.querySelectorAll('.headerNavigationItem > a');
-	for (let i = 0; i < numOfHeaderLinks.length; i++) {
-		numOfHeaderLinks[i].style.color = '#5E5E5E';
-	}
-	document.getElementById("headerLogo").src="graphics/headerLogoBlack.png";
-}
-
-</script>
 </html>
