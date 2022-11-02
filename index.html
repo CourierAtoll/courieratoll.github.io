@@ -95,29 +95,7 @@
 				</div>
 			</div>
 		</div>
-	</div>	
-		
-		
-		
-	<!--	
-	<div class="slideshowType1" id="slideshowType1">
-		<div class="slideshowType1Item1" id="slideshowType1Item1">
-			<p>Slideshow Content</p>
-		</div>
-		<div class="slideshowType1Item2" id="slideshowType1Item2">
-			<p>Slideshow Content</p>
-		</div>
-		<div class="slideshowType1Item3" id="slideshowType1Item3">
-			<p>Slideshow Content</p>
-		</div>
-		<div class="slideshowType1Item4" id="slideshowType1Item4">
-			<p>Slideshow Content</p>
-		</div>
 	</div>
-	-->
-
-	<button type="button" onclick="slideshowType1Controls(1)">Go Left</button> 
-	<button type="button" onclick="slideshowType1Controls(-1)">Go Right</button> 
 	
 	<div class="contentType1">
 		<div class="contentType1Title">
@@ -137,11 +115,6 @@
 				<p>Some copy.</p>
 			</div>
 		</div>
-		<!--<div class="slideshowType2Item1">
-			<p>Slideshow Content</p>
-			<p>Slideshow Content</p>
-			<p>Slideshow Content</p>
-		</div>-->
 	</div>
 	
 	<div class="contentType3">
@@ -149,21 +122,89 @@
 	</div>
 	
 	<div class="embeddedYouTubeVideoContainer">
-		<div class="embeddedYouTubePlayer" id="embeddedYouTubePlayer1">
+		<div class="embeddedYouTubePlayer">
+			<iframe src="https://www.youtube-nocookie.com/embed/XTwCqGqsbA4" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<!--src="https://www.youtube.com/embed/XTwCqGqsbA4"-->
-		<!--<iframe title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
 	</div>
-	<button type="button" onclick="addEmbeddedYouTubeVideo('embeddedYouTubePlayer1', 'https://www.youtube.com/embed/XTwCqGqsbA4')">Go Left</button> -->
+	
 	<div class="slideshowType2">
+		<div class="slideshowType2Container">
+			<div class="slideshowType2ButtonsContainer" id="slideshowType2ButtonsContainer">
+				<div class="slideshowType2ButtonLeftContainer">
+					<img onclick="slideshowType2Controls(1)" id="slideshowType2LeftArrow" src="graphics/arrowLeftBlack.png">
+				</div>
+				<div class="slideshowType2ButtonRightContainer">
+					<img onclick="slideshowType2Controls(-1)" id="slideshowType2RightArrow" src="graphics/arrowRightBlack.png">
+				</div>
+			</div>
 		
+			<div class="slideshowType2Wrapper" id="slideshowType2Wrapper">
+				<div class="slideshowType2Slide" id="slideshowType2Slide1">
+					<div class="slideshowType2Slide1">
+						<div class="slideshowType2SlideContent">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+							<h2>Testimonial 4</h2>
+						</div>
+					</div>
+				</div>
+				<div class="slideshowType2Slide" id="slideshowType2Slide2">
+					<div class="slideshowType2Slide2">
+						<div class="slideshowType2SlideContent">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+							<h2>Testimonial 1</h2>
+						</div>
+					</div>
+				</div>
+				<div class="slideshowType2Slide" id="slideshowType2Slide3">
+					<div class="slideshowType2Slide3">
+						<div class="slideshowType2SlideContent">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+							<h2>Testimonial 2</h2>
+						</div>
+					</div>
+				</div>
+				<div class="slideshowType2Slide" id="slideshowType2Slide1">
+					<div class="slideshowType2Slide1">
+						<div class="slideshowType2SlideContent">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+							<h2>Testimonial 3</h2>
+						</div>
+					</div>
+				</div>
+				<div class="slideshowType2Slide" id="slideshowType2Slide1">
+					<div class="slideshowType2Slide1">
+						<div class="slideshowType2SlideContent">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+							<h2>Testimonial 4</h2>
+						</div>
+					</div>
+				</div>
+				<div class="slideshowType2Slide" id="slideshowType2Slide1">
+					<div class="slideshowType2Slide1">
+						<div class="slideshowType2SlideContent">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+							<h2>Testimonial 1</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="staticFooter">
+		<div class="staticFooterContent">
+			<p>If it wasn't blatantly obvious, this site is satire. It's probably worth having this statement at the bottom of every page so there is absolutely no confusion as to what this is. The original site has four columns of links which are all niche and legal. I don't see the point of us recreating every single webpage but I am happy to add pages if there is consensus from the group.</p>
+		</div>
 	</div>
 	
 </body>
 <script>
 var slideshowType1SlidePos = 0;
 var slideshowType1MaxSlides = -3; 
+var slideshowType2SlidePos = 0;
+var slideshowType2MaxSlides = -3; 
 var headerCurrentlySticky = 0;
+resetSlideshowType1()
 //Remember that an index starts at 0, so a value of -3 means there are 4 slides.
 //The value of slideshowType1MaxSlides has to be negative because fuck you, that's why.
 
@@ -219,10 +260,48 @@ function slideshowType1Controls(userInput) {
 			document.getElementById("headerLogo").src="graphics/headerLogoWhite.png";
 		}
 		document.getElementById("slideshowType1LeftArrow").src="graphics/arrowLeftWhite.png";
-		document.getElementById("slideshowType1RightArrow").src="graphics/arrowRightWhite.png";
-		
+		document.getElementById("slideshowType1RightArrow").src="graphics/arrowRightWhite.png";	
+	}	
+}
+
+function slideshowType2Controls(userInput) {
+	var slideshowType2Width = 1200;
+	console.log("Type 2 controls");
+	
+	//Calculate new slide position.
+	slideshowType2SlidePos = slideshowType2SlidePos + userInput
+	
+	
+	//Tests to see if the slideshow position is within the appropriate range.
+	if (slideshowType2SlidePos > 0) {
+		slideshowType2SlidePos = slideshowType2MaxSlides
 	}
-		
+	
+	if (slideshowType2SlidePos < slideshowType2MaxSlides) {
+		slideshowType2SlidePos = 0
+	}
+	
+	console.log(slideshowType2SlidePos);
+	
+	//We need to check if the clients screen is wider or thinner compared to 1200px.
+	var bodyWidth = document.getElementById('announcementBar').clientWidth;
+	console.log("BODY WIDTH");
+	console.log(bodyWidth);
+	
+	if (slideshowType2Width > bodyWidth) {
+		slideshowType2Width = bodyWidth;
+	} 
+	
+	document.getElementById('slideshowType2Wrapper').style.width = (slideshowType2Width * 6);
+	console.log(slideshowType2Width * 6);
+	
+	//Calculate the margin left value from slide position.
+	var marginLeftVal;
+	marginLeftVal = (slideshowType2SlidePos * slideshowType2Width) - slideshowType2Width;
+	marginLeftVal = marginLeftVal.toString();
+	marginLeftVal += 'px';
+
+	document.getElementById('slideshowType2Wrapper').style.marginLeft = marginLeftVal;
 }
 
 function headerNavigationItemHover(itemVal) {
@@ -299,6 +378,9 @@ function resetSlideshowType1() { //This function is hacky as fuck but I frankly 
 	adjustPageForSlideshowType1();
 	slideshowType1Controls(slideshowType1SlidePosBackup);
 	document.getElementById('slideshowType1Wrapper').style.transition = "1s";
+	
+	//Fuck it, let's reset slideshow type 2 in here too.
+	slideshowType2Controls(0);
 }
 
 function detectStickyHeader() {
