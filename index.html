@@ -154,13 +154,10 @@
 <script>
 var slideshowType1SlidePos = 0;
 var slideshowType1MaxSlides = -3; 
-var slideshowType1Height = 2;
 //Remember that an index starts at 0, so a value of -3 means there are 4 slides.
 //The value of slideshowType1MaxSlides has to be negative because fuck you, that's why.
 
 function slideshowType1Controls(userInput) {
-	//For some reason the page main slideshow keeps glitching out every so often so I'm calling the function which adjusts it whenever I can.
-	adjustPageForSlideshowType1()
 
 	//Calculate new slide position.
 	slideshowType1SlidePos = slideshowType1SlidePos + userInput
@@ -206,9 +203,7 @@ function slideshowType1Controls(userInput) {
 		document.getElementById("slideshowType1RightArrow").src="graphics/arrowRightWhite.png";
 		document.getElementById("headerLogo").src="graphics/headerLogoWhite.png";
 	}
-	
-	adjustPageForSlideshowType1()
-	
+		
 }
 
 function headerNavigationItemHover(itemVal) {
@@ -240,7 +235,7 @@ function headerNavigationItemNoHover(itemVal) {
 function adjustPageForSlideshowType1() {
 	//This calculates the height of the slideshow.
 	var announcementBarHeight = document.getElementById('announcementBar').clientHeight;
-	slideshowType1Height = window.innerHeight - announcementBarHeight + 2; //I add two as a fix for a single white line that won't fucking disappear.
+	var slideshowType1Height = window.innerHeight - announcementBarHeight + 2; //I add two as a fix for a single white line that won't fucking disappear.
 	
 	//Now we calculate the height of the top margin.
 	var stickyHeaderBarHeight = document.getElementById('stickyHeaderBar').clientHeight;
